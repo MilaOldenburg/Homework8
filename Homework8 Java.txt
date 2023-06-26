@@ -1,0 +1,97 @@
+1.public class Homework8 {
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                System.out.println(i);
+            }
+        }
+}
+}
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=53945:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework6\out\production\Homework6 Homework8
+7
+14
+21
+28
+35
+42
+49
+56
+63
+70
+77
+84
+91
+98
+
+Process finished with exit code 0
+
+2.public class Homework81 {
+
+    public static void main(String[] args) {
+
+        int sum = 0;
+        for (int i = 1; i <= 50; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                sum += i;
+            }
+        }
+        System.out.println("Сумма: " + sum);
+
+    }
+}
+
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=53969:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework6\out\production\Homework6 Homework81
+Сумма: 90
+
+Process finished with exit code 0
+
+3.
+public class Homework82 {
+
+    public static void main(String[] args) {
+
+        int number = 100; // Замените на желаемое число
+        int sum = 0;
+        for (int i = 2; i < number; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                sum += i;
+            }
+        }
+        System.out.println("Сумма простых чисел: " + sum);
+
+
+    }
+}
+"C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=53984:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework6\out\production\Homework6 Homework82
+Сумма простых чисел: 1060
+
+Process finished with exit code 0
+
+
+4. public static void main(String[] args) {
+
+        String str = "hello";
+        char ch = 'l';
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
+        System.out.println("Количество вхождений: " + count);
+
+    }
+    "C:\Program Files\Java\jdk-17\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=53994:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\milao\IdeaProjects\Java\Homework6\out\production\Homework6 Homework83
+Количество вхождений: 2
+
+Process finished with exit code 0
+
